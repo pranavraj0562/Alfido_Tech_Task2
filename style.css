@@ -150,3 +150,28 @@ body {
     color: #38bdf8;
     margin-bottom: 10px;
 }
+@media(max-width: 480px) {
+    .weather-card{
+        padding: 20px;
+        border-radius:15px;
+    }
+    .search-box{
+        flex-direction: column;
+
+    }
+    .weather-details{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width:768px){
+    .weather-card{
+        max-width: 90%;
+    }
+}
+
+@media(min-width:1024px) {
+    .weather-card{
+        max-width: 600px;
+    }
+}
