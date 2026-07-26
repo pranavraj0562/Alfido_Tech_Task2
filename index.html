@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App | Pranav</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- Weather Card -->
+        <section class="weather-card">
+
+            <!-- Heading -->
+            <div class="title">
+                <h1>Weather App</h1>
+                <p>Know the weather instantly 🌤️</p>
+            </div>
+
+            <!-- Search Box -->
+            <div class="search-box">
+
+                <input type="text" id="cityInput" placeholder="Enter city name">
+
+                <button id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+            </div>
+
+            <!-- Weather Content -->
+            <div class="weather-content">
+
+                <!-- Weather Icon -->
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="weather.png" alt="Weather Icon">
+                </div>
+
+                <!-- Temperature -->
+                <h2 id="temperature">--°C</h2>
+
+                <!-- Condition -->
+                <h3 id="weatherCondition">Clear Sky</h3>
+
+                <!-- City -->
+                <p id="cityName">Search a city</p>
+
+            </div>
+
+            <!-- Weather Details -->
+            <div class="weather-details">
+
+                <div class="detail">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h4>Humidity</h4>
+                        <p id="humidity">--%</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <h4>Wind</h4>
+                        <p id="wind">-- km/h</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <div>
+                        <h4>Feels Like</h4>
+                        <p id="feelsLike">--°C</p>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <div>
+                        <h4>Pressure</h4>
+                        <p id="pressure">----</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Date & Time -->
+            <div class="date-time">
+
+                <p id="currentDate">
+                    📅 Monday, 21 July
+                </p>
+
+                <p id="currentTime">
+                    🕒 08:00 PM
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
