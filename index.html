@@ -29,20 +29,25 @@
 
             <!-- Heading -->
             <div class="title">
-                <h1>Weather App</h1>
+                <h1><i class="fa-solid fa-cloud-sun"></i> Weather App</h1>
                 <p>Know the weather instantly 🌤️</p>
             </div>
 
             <!-- Search Box -->
             <div class="search-box">
 
-                <input type="text" id="cityInput" placeholder="Enter city name">
+                <input type="text" id="cityInput" placeholder="Enter city name" autocomplete="off">
 
                 <button id="searchBtn">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
 
             </div>
+            <div id="loader" style="display:none;">
+                Loading...
+            </div>
+
+            <p id="errorMessage" style="display:none; color:red;"></p>
 
             <!-- Weather Content -->
             <div class="weather-content">
@@ -117,7 +122,7 @@
 
     </main>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
