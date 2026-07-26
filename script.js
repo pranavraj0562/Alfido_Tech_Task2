@@ -152,3 +152,35 @@ cityInput.addEventListener("keydown", (e) => {
 // ================================
 
 checkWeather("Ranchi");
+// ================================
+// Live Date & Time
+// ================================
+
+const currentDate = document.getElementById("currentDate");
+const currentTime = document.getElementById("currentTime");
+
+function updateDateTime() {
+    const now = new Date();
+
+    const dateOptions = {
+        weekday: "long",
+        day: "numeric",
+        month: "long",
+        year: "numeric"
+    };
+
+    const timeOptions = {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+    };
+
+    currentDate.innerHTML = `📅 ${now.toLocaleDateString("en-IN", dateOptions)}`;
+    currentTime.innerHTML = `🕒 ${now.toLocaleTimeString("en-IN", timeOptions)}`;
+}
+
+// Update immediately
+updateDateTime();
+
+// Update every second
+setInterval(updateDateTime, 1000);
